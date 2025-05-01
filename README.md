@@ -40,6 +40,12 @@ It will install WireGuard (kernel module and tools) on the server, configure it,
 
 Run the script again to add or remove clients!
 
+To add a new interface, the first and only argument should be to pass the path to the new wireguard parameter file. The next steps are no different from the usual usage. If no argument is passed, the default is `/etc/wireguard/params`. In the future, when adding a user to a new interface, you should also transmit. For example:
+
+```bash
+./wireguard-install.sh /etc/wireguard/new-params
+```
+
 ## Providers
 
 I recommend these cheap cloud providers for your VPN server:
